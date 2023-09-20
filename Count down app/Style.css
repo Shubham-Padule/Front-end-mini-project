@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'poppins' ,sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    width: 100vw;
+    height: 100vw;
+    background-image: url(images/background.png);
+    background-position: center;
+    background-size: cover;
+    padding: 0 8%;
+   
+
+}
+.logo{
+    width: 120px;
+    cursor: pointer;
+    padding: 20px 0;
+} 
+.containt{
+    top:50%;
+    position: absolute;
+    
+    color: #fff;
+}
+.containt h1{
+    font-size: 64px;
+    font-weight: 600;
+}
+.containt h1 span{
+    color: #ff3753;
+}
+.containt button{
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    padding: 12px 25px;
+    color: #ffff;
+    display: flex;
+    align-items: center; 
+    margin-top: 30px;
+    cursor: pointer ;
+}
+.containt button img{
+
+    width: 15px;
+    margin-left: 10px;
+
+}
+.launch-time{
+    display: flex;
+}
+.launch-time div{
+     flex-basis: 100px;
+
+}
+.launch-time div p{
+    font-size: 60px;
+    margin-bottom: 14px;
+}
+.rocket{
+    width: 250px;
+    position: absolute;
+    right: 10%;
+    bottom: 0;
+    animation: rocket 4s linear infinite;
+}
+@keyframes  rocket {
+    0%{
+        bottom: 0;
+        opacity: 0;
+    }
+    100%{
+        bottom: 105%;
+        opacity: 1;
+    }
+    
+}
